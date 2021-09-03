@@ -6,23 +6,61 @@
 }
 
 body {
-    background-image: url("images/space\ needle.jpg");
+    background-image: url("images/reflection.jfif");
     background-size: cover;
     background-attachment: fixed;
 }
 
 h1 {
   font-size: 80px;
-  margin-top: 10px;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+main {
+    background-color: white;
+}
+
+blockquote {
+    color: white;
+    font-size: 30px;
 }
 
 header {
   height: 100vh;
   justify-content: center;
+  flex-direction: column;
+  display: flex;
+  align-items: left;
+  margin-left: 26%;
+  padding-bottom: 30%;
 }
 
+blockquote {
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid #dfa1e0; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto 0 0; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .11em; /* Adjust as needed */
+    animation: 
+      typing 3.5s steps(40, end),
+      blink-caret .75s step-end infinite;
+  }
+  
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 62% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: #dfa1e0; }
+  }
+
 .navbar {
-    background: #131313;
+    /*background: #131313; */
     height: 80px;
     display: flex;
     justify-content: center;
