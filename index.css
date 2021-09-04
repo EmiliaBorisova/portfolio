@@ -1,28 +1,45 @@
-* {
+* :not(h1){
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: 'Kumbh Sans', sans-serif;
+    font-family: 'Nunito', sans-serif;
 }
 
 body {
-    background-image: url("images/reflection.jfif");
+    background-image: url("images/bwcity.jpg");
     background-size: cover;
     background-attachment: fixed;
+    
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 h1 {
   font-size: 80px;
   margin-bottom: 10px;
-  color: #fff;
+  color: #27363B;
+  font-family: 'Nanum Myeongjo', serif;
+}
+
+h2 {
+  color: #27363B;
+  font-family: 'Nanum Myeongjo', serif;
+  font-size: 40px;
+  padding-bottom: 3%;
+  padding-top: 10%;
 }
 
 main {
     background-color: white;
+    padding-left: 20%;
+    padding-right: 20%;
+    
 }
 
 blockquote {
-    color: white;
+    color: #27363B;
     font-size: 30px;
 }
 
@@ -32,16 +49,16 @@ header {
   flex-direction: column;
   display: flex;
   align-items: left;
-  margin-left: 26%;
-  padding-bottom: 30%;
+  padding-bottom: 10%;
+  margin-left: 35%;
 }
 
 blockquote {
     overflow: hidden; /* Ensures the content is not revealed until the animation */
-    border-right: .15em solid #dfa1e0; /* The typwriter cursor */
+    border-right: .15em solid #F4837D; /* The typwriter cursor */
     white-space: nowrap; /* Keeps the content on a single line */
     margin: 0 auto 0 0; /* Gives that scrolling effect as the typing happens */
-    letter-spacing: .11em; /* Adjust as needed */
+    letter-spacing: .01rem; /* Adjust as needed */
     animation: 
       typing 3.5s steps(40, end),
       blink-caret .75s step-end infinite;
@@ -50,17 +67,17 @@ blockquote {
   /* The typing effect */
   @keyframes typing {
     from { width: 0 }
-    to { width: 62% }
+    to { width: 42% }
   }
   
   /* The typewriter cursor effect */
   @keyframes blink-caret {
     from, to { border-color: transparent }
-    50% { border-color: #dfa1e0; }
+    50% { border-color: #F4837D; }
   }
 
 .navbar {
-    /*background: #131313; */
+    background-color: #27363B;
     height: 80px;
     display: flex;
     justify-content: center;
@@ -85,7 +102,7 @@ blockquote {
 #navbar-logo {
     background-color: #ff8177;
    /* background-image: linear-gradient(to top, #ff0844, 0%, #ffb199, 100%); */
-    background-image: linear-gradient(#ff0844, #ffb199);
+    background-image: linear-gradient(#EB4960, #ffb199);
     background-size: 100%;
     -webkit-background-clip: text;
     background-clip: text;
@@ -144,17 +161,18 @@ blockquote {
     border: none;
     outline: none;
     border-radius: 4px;
-    background: #f77062;
+    background: #F4837D;
     color: #fff;
 }
 
 .button:hover {
-    background: #4837ff;
+    color: #27363B;
+    background: #fff;
     transition: all 0.3s ease;
 }
 
 .navbar-links:hover {
-    color: #f77062;
+    color: #F4837D;
     transition: all 0.3s ease;
 }
 
@@ -180,11 +198,11 @@ blockquote {
         transition: all 0.5s ease;
         height: 50vh;
         z-index: -1;
-        background: #131313;
+        background: #27363B;
     }
 
     .navbar-menu.active {
-        background: #131313;
+        background: #27363B;
         top: 100%;
         opacity: 1;
         transition: all 0.5s ease;
@@ -253,6 +271,26 @@ blockquote {
     #mobile-menu.is-active .bar:nth-child(3) {
         transform: translateY(-8px) rotate(-45deg);
     }
+}
+
+#me-pic {
+    float: left;
+    width: 20%;
+    margin-right: 30px;
+    filter: drop-shadow(2px 2px 2px grey);
+}
+
+p {
+    font-size: 19px;
+    font-weight: normal;
+    text-align: justify;
+    color: black;
+}
+
+#intro-h3 {
+    font-size: 23px;
+    font-weight: 900;
+    margin-bottom: 2%;
 }
 
 
