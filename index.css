@@ -278,6 +278,7 @@ blockquote {
     width: 20%;
     margin-right: 30px;
     filter: drop-shadow(2px 2px 2px grey);
+    border-radius: 1%;
 }
 
 p {
@@ -291,6 +292,66 @@ p {
     font-size: 23px;
     font-weight: 900;
     margin-bottom: 2%;
+}
+
+.content {
+    padding-left: 5%;
+    border-left-style: dotted;
+    border-left-width: 5px;
+    border-left-color: #F4837D;
+    margin-top: 15px;
+}
+
+.h3-resume {
+    font-size: 25px;
+    font-weight: 900;
+    padding-top: 20px;
+}
+
+mark {
+    font-style: italic;
+    background-color: lightgray;
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+.role {
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+
+#classes {
+    list-style-type: none;
+    padding-left: 19px;
+    padding-top: 5px;
+    font-size: 19px;
+}
+
+.decor {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.location {
+    font-weight: bold;
+    border-left-style: dotted;
+    border-bottom-style: dotted;
+    padding-left: 1%;
+    border-left-color: #F4837D;
+    border-bottom-color: #F4837D;
+    border-left-width: 5px;
+    border-bottom-width: 5px;
+}
+
+#degree {
+    padding-top: 1%;
+    padding-bottom: 1%;
+    font-weight: bold;
+}
+
+h4 {
+    font-size: 19px;
 }
 
 
