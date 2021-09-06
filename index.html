@@ -13,7 +13,6 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap" rel="stylesheet">
-
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=DM+Sans&family=Nanum+Myeongjo&display=swap" rel="stylesheet">
@@ -30,7 +29,7 @@
                     </div>
                     <ul class="navbar-menu">
                         <li class="navbar-item">
-                            <a href="#about" class="navbar-links">About</a>
+                            <a href="#about" class="navbar-links">Profile</a>
                         </li>
                         <li class="navbar-item">
                             <a href="#resume" class="navbar-links">Resume</a>
@@ -45,52 +44,95 @@
                 </div>
         </nav>
     <body>
+        <div class="loader-wrapper">
+            <div class="loader"></div>
+        </div>
         <header>
             <h1>Emilia Borisova</h1>
             <blockquote>Hi! Thank you for visiting my webpage!</blockquote>
         </header>
         <main>
             <section id="about">
-                <h2>About</h2>
-                <img src="images/me.jpg" id="me-pic"></img>
-                <h3 id="intro-h3">Hi! I'm Emilia.</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <h2>Profile</h2>
+                <div id="about-content">
+                    <div id="about-text">
+                        <h3 class="intro-h3">About me</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    </div>
+                    <div id="about-pic">
+                        <img src="images/me.jpg" id="me-pic"></img>
+                    </div>
+                    <div id="about-details">
+                        <h3 class="intro-h3">Details</h3>
+                        <div>
+                            <h4>Name:</h4>
+                            <p>Emilia Borisova</p>
+                        </div>
+                        <div>
+                            <h4>Vocation:</h4>
+                            <p>Software Engineer</p>
+                        </div>
+                        <div>
+                            <h4>Location:</h4>
+                            <p>Redmond, Washington, U.S.A.</p>
+                        </div>
+                    </div>
+                </div>
             </section>
             <section id="resume">
                 <h2>Resume</h2>
-                <h3 class="h3-resume">EDUCATION</h3>
+                <h3 id="h3-resume-exception">Education</h3>
                 <div class="content">
-                    <p class="role">University of Washington, Seattle</p>
-                    <mark>Expected Completion in 2023</mark>
-                    <p id="degree">B.S. in Computer Science</p>
-                    <h4>Coursework:</h4>
-                    <ul id="classes">
-                        <li>Data Structures and Algorithms</li>
-                        <li>Web Development</li>
-                        <li>Software Design and Implementation</li>
-                    </ul>
+                    <div class="title-and-date">
+                        <h4>University of Washington, Seattle</h4>
+                        <mark>Expected Completion in 2023</mark>
+                    </div>
+                    <div class="resume-description">
+                        <h5>B.S. in Computer Science</h5>
+                        <p>Coursework: Data Structures and Algorithms | Web Development | Software Design and Implementation</p>
+                    </div>
                 </div>
-                <h3 class="h3-resume">EXPERIENCE</h3>
+                <h3 class="h3-resume">Experience</h3>
                 <div class="content">
-                    <p class="role">Back-End Software Developer Intern | Avanade </p>
-                    <mark>Sep. 2020 – Present</mark>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <div class="title-and-date">
+                        <h4>Avanade</h4>
+                        <mark>Sep. 2020 – Present</mark>
+                    </div>
+                    <div class="resume-description">
+                        <h5>Back-End Software Developer Intern</h5>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    </div>
                 </div>
                 <div class="content">
-                    <p class="role">Teaching Assistant | Paul G. Allen School of Computer Science</p>
-                    <mark>Jun. 2021 – Present</mark>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <div class="title-and-date">
+                        <h4>Paul G. Allen School of Computer Science</h4>
+                        <mark>Jun. 2021 – Present</mark>
+                    </div>
+                    <div class="resume-description">
+                        <h5>Teaching Assistant</h5>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    </div>
                 </div>
                 <div class="content">
-                    <p class="role">Solution Developer Intern | Barn2Door</p>
-                    <mark>May 2020 – Sep. 2020</mark>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <div class="title-and-date">
+                        <h4>Barn2Door</h4>
+                        <mark>May 2020 – Sep. 2020</mark>
+                    </div>
+                    <div class="resume-description">
+                        <h5>Solution Developer Intern</h5>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    </div>
                 </div>
-                <h3 class="h3-resume">EXTRACURRICULAR EXPERIENCE</h3>
+                <h3 class="h3-resume">Extracurricular Experience</h3>
                 <div class="content">
-                    <p class="role">DubHacks Executive Organizer | University of Washington</p>
-                    <mark>Dec. 2019 – Dec. 2020</mark>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <div class="title-and-date">
+                        <h4>University of Washington</h4>
+                        <mark>Dec. 2019 – Dec. 2020</mark>
+                    </div>
+                    <div class="resume-description">
+                        <h5>DubHacks Executive Organizer</h5>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    </div>
                 </div>
             </section>
             <section id="projects">

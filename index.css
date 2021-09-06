@@ -27,15 +27,24 @@ h2 {
   color: #27363B;
   font-family: 'Nanum Myeongjo', serif;
   font-size: 40px;
-  padding-bottom: 3%;
-  padding-top: 10%;
+  padding-bottom: 1%;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-bottom-color: #F4837D;
+  margin-bottom: 5%;
 }
 
 main {
     background-color: white;
+    /*padding-left: 20%;
+    padding-right: 20%; */
+}
+
+#resume, #about, #contact, #projects {
     padding-left: 20%;
     padding-right: 20%;
-    
+    padding-top: 7%;
+    padding-bottom: 7%;
 }
 
 blockquote {
@@ -273,12 +282,48 @@ blockquote {
     }
 }
 
+.loader {
+    width: 100px;
+    height: 100px;
+    animation: loading 2s infinite ease-out;
+    margin: auto;
+    border-radius: 50%;
+    background-color: #F4837D;
+}
+
+@keyframes loading {
+    0% {
+      transform: scale(1);
+    }
+    100% {
+      transform: scale(8);
+      opacity: 0;
+    }
+}
+
+.hide {
+    display: none;
+}
+  
+.loader-wrapper {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
 #me-pic {
-    float: left;
-    width: 20%;
-    margin-right: 30px;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
     filter: drop-shadow(2px 2px 2px grey);
-    border-radius: 1%;
+    border-radius: 50%;
 }
 
 p {
@@ -288,24 +333,78 @@ p {
     color: black;
 }
 
-#intro-h3 {
+.intro-h3 {
     font-size: 23px;
     font-weight: 900;
     margin-bottom: 2%;
 }
 
+#about-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#about-text {
+    width: 100%;
+    padding-right: 100px;
+}
+
+#about-pic {
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 40px;
+}
+
+#about-details {
+    width: 100%;
+    padding-left: 100px;
+}
+
+h4 {
+    margin-bottom: 1%;
+}
+
+#about-details > div {
+    margin-bottom: 5%;
+}
+
 .content {
-    padding-left: 5%;
-    border-left-style: dotted;
-    border-left-width: 5px;
-    border-left-color: #F4837D;
-    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    padding-top: 2%;
+}
+
+h5 {
+    font-size: 19px;
+    color: rgb(85, 84, 84);
+    padding-bottom: 1%;
+}
+
+.title-and-date {
+    width: 100%;
+    margin-right: -30%;
+}
+
+.resume-description {
+    width: 100%;
 }
 
 .h3-resume {
-    font-size: 25px;
-    font-weight: 900;
+    font-size: 30px;
+    font-weight: normal;
     padding-top: 20px;
+    color: #F4837D;
+    font-family: 'Nanum Myeongjo', serif;
+}
+
+#h3-resume-exception {
+    font-size: 30px;
+    font-weight: normal;
+    color: #F4837D;
+    font-family: 'Nanum Myeongjo', serif;
 }
 
 mark {
@@ -354,5 +453,7 @@ h4 {
     font-size: 19px;
 }
 
-
-
+#resume, #contact {
+    background-color: #ECEBF0;
+    
+}
