@@ -16,6 +16,11 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=DM+Sans&family=Nanum+Myeongjo&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+        <script src="wow.min.js"></script>
+        <script>
+            new WOW().init();
+          </script>
     </head>
         <nav class="navbar">
                 <div class="navbar-container">
@@ -53,14 +58,23 @@
         </header>
         <main>
             <section id="about">
-                <h2>Profile</h2>
-                <div id="about-content">
+                <h2 class="wow animate__animated animate__slideInUp">Profile</h2>
+                <div class="wow animate__animated animate__slideInUp" id="about-content">
                     <div id="about-text">
                         <h3 class="intro-h3">About me</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                     </div>
                     <div id="about-pic">
                         <img src="images/me.jpg" id="me-pic"></img>
+                        <div class="about-btns">
+                            <a href="https://www.linkedin.com/in/emilia-borisova/" class="button-about" target="_blank">
+                                <i class="fab fa-linkedin-in fa-2x"></i>
+                            </a>
+                            <span class="space"></span>
+                            <a href="https://github.com/EmiliaBorisova" class="button-about" target="_blank">
+                                <i class="fab fa-github fa-2x"></i>
+                            </a>
+                        </div>
                     </div>
                     <div id="about-details">
                         <h3 class="intro-h3">Details</h3>
@@ -80,68 +94,100 @@
                 </div>
             </section>
             <section id="resume">
-                <h2>Resume</h2>
-                <h3 id="h3-resume-exception">Education</h3>
-                <div class="content">
-                    <div class="title-and-date">
-                        <h4>University of Washington, Seattle</h4>
-                        <mark>Expected Completion in 2023</mark>
+                <h2 class="wow animate__animated animate__slideInUp">Resume</h2>
+                <section class="wow animate__animated animate__slideInUp">
+                    <h3 id="h3-resume-exception">Education</h3>
+                    <div class="content">
+                        <div class="title-and-date">
+                            <h4>University of Washington, Seattle</h4>
+                            <mark>Expected Completion in 2023</mark>
+                        </div>
+                        <div class="resume-description">
+                            <h5>B.S. in Computer Science</h5>
+                            <p>Coursework: Data Structures and Algorithms | Web Development | Software Design and Implementation</p>
+                        </div>
                     </div>
-                    <div class="resume-description">
-                        <h5>B.S. in Computer Science</h5>
-                        <p>Coursework: Data Structures and Algorithms | Web Development | Software Design and Implementation</p>
+                </section>
+                <section class="wow animate__animated animate__slideInUp">
+                    <h3 class="h3-resume">Experience</h3>
+                    <div class="content">
+                        <div class="title-and-date">
+                            <h4>Avanade</h4>
+                            <mark>Sep. 2020 – Present</mark>
+                        </div>
+                        <div class="resume-description">
+                            <h5>Back-End Software Developer Intern</h5>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        </div>
                     </div>
-                </div>
-                <h3 class="h3-resume">Experience</h3>
-                <div class="content">
-                    <div class="title-and-date">
-                        <h4>Avanade</h4>
-                        <mark>Sep. 2020 – Present</mark>
+                    <div class="content">
+                        <div class="title-and-date">
+                            <h4>Paul G. Allen School of Computer Science</h4>
+                            <mark>Jun. 2021 – Present</mark>
+                        </div>
+                        <div class="resume-description">
+                            <h5>Teaching Assistant</h5>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        </div>
                     </div>
-                    <div class="resume-description">
-                        <h5>Back-End Software Developer Intern</h5>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <div class="content">
+                        <div class="title-and-date">
+                            <h4>Barn2Door</h4>
+                            <mark>May 2020 – Sep. 2020</mark>
+                        </div>
+                        <div class="resume-description">
+                            <h5>Solution Developer Intern</h5>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        </div>
                     </div>
-                </div>
-                <div class="content">
-                    <div class="title-and-date">
-                        <h4>Paul G. Allen School of Computer Science</h4>
-                        <mark>Jun. 2021 – Present</mark>
+                </section>
+                <section class="wow animate__animated animate__slideInUp">
+                    <h3 class="h3-resume">Extracurricular Experience</h3>
+                    <div class="content">
+                        <div class="title-and-date">
+                            <h4>University of Washington</h4>
+                            <mark>Dec. 2019 – Dec. 2020</mark>
+                        </div>
+                        <div class="resume-description">
+                            <h5>DubHacks Executive Organizer</h5>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        </div>
                     </div>
-                    <div class="resume-description">
-                        <h5>Teaching Assistant</h5>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                    </div>
-                </div>
-                <div class="content">
-                    <div class="title-and-date">
-                        <h4>Barn2Door</h4>
-                        <mark>May 2020 – Sep. 2020</mark>
-                    </div>
-                    <div class="resume-description">
-                        <h5>Solution Developer Intern</h5>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                    </div>
-                </div>
-                <h3 class="h3-resume">Extracurricular Experience</h3>
-                <div class="content">
-                    <div class="title-and-date">
-                        <h4>University of Washington</h4>
-                        <mark>Dec. 2019 – Dec. 2020</mark>
-                    </div>
-                    <div class="resume-description">
-                        <h5>DubHacks Executive Organizer</h5>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                    </div>
+                </section>
+                <div class="resume-btn wow animate__animated animate__slideInUp">
+                    <a href="images/Emilia Borisova Resume.pdf" class="button-resume" target="_blank">Full Resume</a>
                 </div>
             </section>
             <section id="projects">
-                <h2>Projects</h2>
+                <h2 class="wow animate__animated animate__slideInUp">Projects</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
             </section>
             <section id="contact">
-                <h2>Contact Me</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <h2 class="wow animate__animated animate__slideInUp">Contact Me</h2>
+                <div class="form-container">
+                    <form action="index.html">
+                        <div class="input-container">
+                            <input type="text" name="name" class="input">
+                            <label for="">Username</label>
+                            <span>Username</span>
+                        </div>
+                        <div class="input-container">
+                            <input type="email" name="email" class="input">
+                            <label for="">Email</label>
+                            <span>Email</span>
+                        </div>
+                        <div class="input-container textarea">
+                            <textarea name="message" class="input"></textarea>
+                            <label for="">Message</label>
+                            <span>Message</span>
+                        </div>
+                        <div id="form-button-container">
+                            <input type="submit" value="Send" class="submit-button">
+
+                        </div>
+                        <p id="response-message"></p>
+                    </form>
+                </div>
             </section>
         </main> 
     </body>

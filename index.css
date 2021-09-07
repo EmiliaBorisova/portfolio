@@ -151,7 +151,7 @@ blockquote {
     height: 100%;
 }
 
-.navbar-btn {
+.navbar-btn, .resume-btn {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -362,6 +362,38 @@ p {
     padding-left: 100px;
 }
 
+.about-btns {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 2rem;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.button-about:hover {
+    color: #fff;
+    background: #27363B;
+    transition: all 0.3s ease;
+}
+
+.button-about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    padding: 7%;
+    border: none;
+    outline: none;
+    border-radius: 50%;
+    background: #F4837D;
+    color: #fff;
+}
+
+.space {
+    width: 20%;
+}
+
 h4 {
     margin-bottom: 1%;
 }
@@ -456,4 +488,164 @@ h4 {
 #resume, #contact {
     background-color: #ECEBF0;
     
+}
+
+.button-resume {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    padding: 10px 20px;
+    height: 100%;
+    width: 15%;
+    margin-top: 2%;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    background: #F4837D;
+    color: #fff;
+}
+
+.button-resume:hover, .submit-button:hover, .submit-button:hover {
+    color: #fff;
+    background: #27363B;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+/* form */
+
+form {
+    z-index: 10;
+    overflow: hidden;
+    position: relative;
+}
+
+.input-container {
+    position: relative;
+    margin: 1rem 0;
+}
+
+.form-container {
+    display: flex;
+    justify-content: center;
+} 
+
+#form-button-container {
+    display: flex;
+    justify-content: center;
+}
+
+form {
+    width: 70%;
+    justify-content: center;
+}
+
+.input {
+    width: 100%;
+    outline: none;
+    border: 2px solid black;
+    background: none;
+    padding: 0.6rem 1.2rem;
+    font-weight: 500;
+    font-size: 0.95rem;
+    letter-spacing: 0.5px;
+    border-radius: 2px;
+    transition: 0.3s;
+    color: black
+}
+
+textarea.input {
+    padding: 0.8rem 1.2rem;
+    min-height: 150px;
+    border-radius: 2px;
+    resize: none;
+    overflow-y: auto;
+}
+
+.input-container label {
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+    padding: 0 0.4rem;
+    color: black;
+    font-size: 0.9rem;
+    font-weight: 400;
+    pointer-events: none;
+    z-index: 1000;
+    transition: 0.5s;
+}
+
+.input-container.textarea label {
+    top: 1rem;
+    transform: translateY(0);
+}
+
+.submit-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    padding: 10px 20px;
+    height: 100%;
+    width: 15%;
+    margin-top: 2%;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    background: #F4837D;
+    color: #fff;
+}
+
+.input-container span {
+    position: absolute;
+    top: 0;
+    left: 25px;
+    transform: translateY(-50%);
+    font-size: 0.8rem;
+    padding: 0 0.4rem;
+    color: transparent;
+    pointer-events: none;
+    z-index: 500;
+}
+
+.input-container span:before, .input-container span:after {
+    content: "";
+    position: absolute;
+    width: 10%;
+    opacity: 0;
+    transition: 0.3s;
+    height: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.input-container span:before {
+    left: 50%;
+    
+}
+
+.input-container span:after {
+    right: 50%;
+}
+
+.input-container.focus label {
+    top: 0;
+    transform: translateY(-50%);
+    left: 25px;
+    font-size: 0.8rem;
+    background-color: #ECEBF0;
+}
+
+.input-container.focus span:before, .input-container span:after {
+    width: 50%;
+    opacity: 1;
+}
+
+#response-message {
+    display: flex;
+    justify-content: center;
+    padding-top: 2%;
+    font-weight: bolder;
 }
