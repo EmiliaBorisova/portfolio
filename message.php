@@ -2,6 +2,7 @@
    $name = $_POST['name'];
    $email= $_POST['email'];
    $message=$_POST['message'];
+   echo "hi";
 
    if(!empty($email) && !empty($message) && !empty($message)) {
     if(filter_var($email, FILTER_VALIDATE_EMAIL)) {

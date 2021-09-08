@@ -3,6 +3,13 @@
     window.addEventListener("load", init);
     
     function init() {
+        if (history.scrollRestoration) {
+            history.scrollRestoration = 'manual';
+        } else {
+            window.onbeforeunload = function () {
+                window.scrollTo(0, 0);
+            }
+        }
         formSubmit();
         contactFormPress();
         setTimeout(function() { 
@@ -27,7 +34,7 @@
             statusTxt.style.display = "block";
 
             let xhr = new XMLHttpRequest()
-            xhr.open("POST", "message.php", true);
+            xhr.open("GET", "message.php", true);
             xhr.onload = () => {
                 if(xhr.readyState == 4 && xhr.status == 200) {
                     let response = xhr.response;
@@ -87,6 +94,11 @@
 
 
 // TO DO:
-//  contact form
-//  skills
+//  content for About me section
+//  content for resume section
+//  coursework for resume section
+//  project work content
+//  get website hosted and check that contact me works
+//  mobile menu spacing
+
 

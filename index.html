@@ -20,7 +20,7 @@
         <script src="wow.min.js"></script>
         <script>
             new WOW().init();
-          </script>
+        </script>
     </head>
         <nav class="navbar">
                 <div class="navbar-container">
@@ -48,7 +48,7 @@
                     </ul>
                 </div>
         </nav>
-    <body>
+    <body id="home-body">
         <div class="loader-wrapper">
             <div class="loader"></div>
         </div>
@@ -160,16 +160,37 @@
             </section>
             <section id="projects">
                 <h2 class="wow animate__animated animate__slideInUp">Projects</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <div id="project-images" class="wow animate__animated animate__slideInUp">
+                    <div class="card">
+                        <img src="images/altspace.jpg">
+                        <div class="info">
+                            <h4>AltspaceVR</h4>
+                            <p>Developed in AltspaceVR using Node.js to positively impact company culture</p>
+                            <div class="card-btn">
+                                <a href="altspace.html" class="read-button">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card" id="map">
+                        <img src="images/campus_map.png">
+                        <div class="info">
+                            <h4>UW Campus Map</h4>
+                            <p>Build an interactive map of UW's campus that gives shortest path between two buildings</p>
+                            <div class="card-btn">
+                                <a href="map.html" class="read-button">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </section>
             <section id="contact">
                 <h2 class="wow animate__animated animate__slideInUp">Contact Me</h2>
-                <div class="form-container">
+                <div class="form-container wow animate__animated animate__slideInUp">
                     <form action="index.html">
                         <div class="input-container">
                             <input type="text" name="name" class="input">
-                            <label for="">Username</label>
-                            <span>Username</span>
+                            <label for="">Name</label>
+                            <span>Name</span>
                         </div>
                         <div class="input-container">
                             <input type="email" name="email" class="input">
@@ -183,7 +204,6 @@
                         </div>
                         <div id="form-button-container">
                             <input type="submit" value="Send" class="submit-button">
-
                         </div>
                         <p id="response-message"></p>
                     </form>
