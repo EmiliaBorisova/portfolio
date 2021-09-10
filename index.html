@@ -7,7 +7,7 @@
         initial-scale=1.0" />
         <title>Emilia Borisova</title>
         <link rel="stylesheet" href="index.css" />
-        <script src="app.js"></script>
+        <script src="index.js"></script>
         <script src="https://kit.fontawesome.com/77245a10b1.js" crossorigin="anonymous"></script>
         <link rel="icon" href="images\EB.png" type="image" sizes="16x16">
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -22,32 +22,32 @@
             new WOW().init();
         </script>
     </head>
-        <nav class="navbar">
-                <div class="navbar-container">
-                    <!--
-                    <a href="/" id="navbar-logo">
-                        <i class="fas fa-code"></i>EMILIA BORISOVA</a> -->
-                    <div class="navbar-toggle" id="mobile-menu">
-                        <span class="bar"></span>
-                        <span class="bar"></span>
-                        <span class="bar"></span>
-                    </div>
-                    <ul class="navbar-menu">
-                        <li class="navbar-item">
-                            <a href="#about" class="navbar-links">Profile</a>
-                        </li>
-                        <li class="navbar-item">
-                            <a href="#resume" class="navbar-links">Resume</a>
-                        </li>
-                        <li class="navbar-item">
-                            <a href="#projects" class="navbar-links">Projects</a>
-                        </li>
-                        <li class="navbar-btn">
-                            <a href="#contact" class="button">Contact Me</a>
-                        </li>
-                    </ul>
-                </div>
-        </nav>
+    <nav class="navbar">
+        <div class="navbar-container">
+            <!--
+            <a href="/" id="navbar-logo">
+            <i class="fas fa-code"></i>EMILIA BORISOVA</a> -->
+            <div class="navbar-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="navbar-menu">
+                <li class="navbar-item">
+                    <a href="#about" class="navbar-links">Profile</a>
+                </li>
+                <li class="navbar-item">
+                    <a href="#resume" class="navbar-links">Resume</a>
+                </li>
+                <li class="navbar-item">
+                    <a href="#projects" class="navbar-links">Projects</a>
+                </li>
+                <li class="navbar-btn">
+                    <a href="#contact" class="button">Contact Me</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
     <body id="home-body">
         <div class="loader-wrapper">
             <div class="loader"></div>
@@ -78,15 +78,15 @@
                     </div>
                     <div id="about-details">
                         <h3 class="intro-h3">Details</h3>
-                        <div>
+                        <div class="detail">
                             <h4>Name:</h4>
                             <p>Emilia Borisova</p>
                         </div>
-                        <div>
+                        <div class="detail">
                             <h4>Vocation:</h4>
                             <p>Software Engineer</p>
                         </div>
-                        <div>
+                        <div class="detail">
                             <h4>Location:</h4>
                             <p>Redmond, Washington, U.S.A.</p>
                         </div>
@@ -104,7 +104,16 @@
                         </div>
                         <div class="resume-description">
                             <h5>B.S. in Computer Science</h5>
-                            <p>Coursework: Data Structures and Algorithms | Web Development | Software Design and Implementation</p>
+                            <h3>Coursework: </h3>
+                            <div id="classes">
+                                <a class="class" href="https://courses.cs.washington.edu/courses/cse332/" target="_blank">Data Structures and Parallelism</a>
+                                <span class="space"></span>
+                                <a class="class" href="https://courses.cs.washington.edu/courses/cse154/" target="_blank">Web Programming</a>
+                                <a class="class" href="https://courses.cs.washington.edu/courses/cse311/" target="_blank">Foundations of Computing I</a>
+                                <a class="class" href="https://courses.cs.washington.edu/courses/cse312/" target="_blank">Foundations of Computing II</a>
+                                <a class="class" href="https://courses.cs.washington.edu/courses/cse331/" target="_blank">Software Design and Implementation</a>
+                                <a class="class" href="https://courses.cs.washington.edu/courses/cse351/" target="_blank">The Hardware/Software Interface</a>
+                            </div>
                         </div>
                     </div>
                 </section>
@@ -161,7 +170,7 @@
             <section id="projects">
                 <h2 class="wow animate__animated animate__slideInUp">Projects</h2>
                 <div id="project-images" class="wow animate__animated animate__slideInUp">
-                    <div class="card">
+                    <div class="card" id="altspace">
                         <img src="images/altspace.jpg">
                         <div class="info">
                             <h4>AltspaceVR</h4>

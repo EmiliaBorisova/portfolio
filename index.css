@@ -185,103 +185,6 @@ blockquote {
     transition: all 0.3s ease;
 }
 
- @media screen and (max-width: 960px) {
-    .navbar-container {
-        display: flex;
-        justify-content: space-between;
-        height: 80px;
-        z-index: 1;
-        width: 100%;
-        max-width: 1300px;
-        padding: 0;
-    }
-
-    .navbar-menu {
-        display: grid;
-        grid-template-columns: auto;
-        margin: 0;
-        width: 100%;
-        position: absolute;
-        top: -1000px;
-        opacity: 0;
-        transition: all 0.5s ease;
-        height: 50vh;
-        z-index: -1;
-        background: #27363B;
-    }
-
-    .navbar-menu.active {
-        background: #27363B;
-        top: 100%;
-        opacity: 1;
-        transition: all 0.5s ease;
-        z-index: 99;
-        height: 50vh;
-        font-size: 1.6rem;
-    }
-
-    #navbar-logo {
-        padding-left: 25px;
-
-    }
-    
-    .navbar-toggle .bar {
-        width: 25px;
-        height: 3px;
-        margin: 5px auto;
-        transition: all 0.3s ease-in-out;
-        background: #fff;
-    }
-
-    .navbar-item {
-        width: 100%;
-    }
-
-    .navbar-links {
-        text-align:  center;
-        padding: 2rem;
-        width: 100%;
-        display: table;
-    }
-
-    #mobile-menu {
-        position: absolute;
-        top: 20%;
-        right: 5%;
-        transform: translate(5%, 20%);
-    }
-
-    .navbar-btn {
-        padding-bottom: 2rem;
-    }
-
-    .button {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 80%;
-        height: 80px;
-        margin: 0;
-    }
-
-    .navbar-toggle .bar {
-        display: block;
-        cursor: pointer;
-    }
-
-    #mobile-menu.is-active .bar:nth-child(2) {
-        opacity: 0;
-    }
-
-    #mobile-menu.is-active .bar:nth-child(1) {
-        transform: translateY(8px) rotate(45deg);
-    }
-
-    #mobile-menu.is-active .bar:nth-child(3) {
-        transform: translateY(-8px) rotate(-45deg);
-    }
-}
-
 .loader {
     width: 100px;
     height: 100px;
@@ -317,6 +220,8 @@ blockquote {
     align-items: center;
     z-index: 9999;
 }
+
+/* about me */
 
 #me-pic {
     width: 100%;
@@ -409,6 +314,32 @@ h4 {
     padding-top: 2%;
 }
 
+/* resume */
+
+#classes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 5%;
+}
+
+.class {
+    font-size: 19px;
+    text-decoration: none;
+    color: #F4837D;
+    font-weight: 600;
+}
+
+.class:hover {
+    color: black;
+    transition: all 0.3s ease;
+}
+
+#classes > p {
+    align-content: flex-start;
+}
+
 h5 {
     font-size: 19px;
     color: rgb(85, 84, 84);
@@ -449,13 +380,6 @@ mark {
 .role {
     font-weight: bold;
     padding-bottom: 10px;
-}
-
-#classes {
-    list-style-type: none;
-    padding-left: 19px;
-    padding-top: 5px;
-    font-size: 19px;
 }
 
 .decor {
@@ -721,7 +645,6 @@ textarea.input {
 }
 
 .card .info p {
-    
     font-size: 15px;
     margin-top: 8px;
     margin-bottom: 20px;
@@ -755,3 +678,200 @@ textarea.input {
 }
 
 /* altspace page */
+
+/* navbar media */
+
+@media screen and (max-width: 960px) {
+    .navbar-container {
+        display: flex;
+        justify-content: space-between;
+        height: 80px;
+        z-index: 1;
+        width: 100%;
+        max-width: 1300px;
+        padding: 0;
+    }
+
+    .navbar-menu {
+        display: grid;
+        grid-template-columns: auto;
+        margin: 0;
+        width: 100%;
+        position: absolute;
+        top: -1000px;
+        opacity: 0;
+        transition: all 0.5s ease;
+        height: 50vh;
+        z-index: -1;
+        background: #27363B;
+    }
+
+    .navbar-menu.active {
+        background: #27363B;
+        top: 100%;
+        opacity: 1;
+        transition: all 0.5s ease;
+        z-index: 99;
+        height: 80vh;
+        font-size: 1.6rem;
+    }
+
+    #navbar-logo {
+        padding-left: 25px;
+
+    }
+    
+    .navbar-toggle .bar {
+        width: 25px;
+        height: 3px;
+        margin: 5px auto;
+        transition: all 0.3s ease-in-out;
+        background: #fff;
+    }
+
+    .navbar-item {
+        width: 100%;
+    }
+
+    .navbar-links {
+        text-align:  center;
+        padding: 2rem;
+        width: 100%;
+        display: table;
+    }
+
+    #mobile-menu {
+        position: absolute;
+        top: 20%;
+        right: 5%;
+        transform: translate(5%, 20%);
+    }
+
+    .navbar-btn {
+        padding-bottom: 2rem;
+    }
+
+    .button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 80%;
+        height: 80px;
+        margin: 0;
+    }
+
+    .navbar-toggle .bar {
+        display: block;
+        cursor: pointer;
+    }
+
+    #mobile-menu.is-active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    #mobile-menu.is-active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    #mobile-menu.is-active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+}
+
+
+/* about me media */
+
+@media screen and (max-width: 1500px) {
+    #about-content > div {
+        width: 100%;
+    }
+
+    #about-content {
+        display: flex;
+        flex-direction: column;      
+    }
+
+    #about-text {
+        width: 100%;
+        padding-right: 0;
+    }
+
+    #me-pic {
+        width: 40%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        min-width: 250px;
+    }
+
+    .button-about {
+        padding: 4%;
+    }
+
+    #about-details {
+        padding-left: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-top: 2%;
+    }
+
+    #about-details > div {
+        align-self: center;
+        text-justify: center;
+    }
+
+    .detail > h4 {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 1700px) {
+    #classes {
+        display: flex;
+        justify-content: start;
+    }
+
+    .class {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    header {
+        margin-left: 10%;
+    }
+}
+
+@media screen and (max-width: 1693px) {
+    .content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    h5 {
+        margin-top: 1%;
+    }
+
+    .resume-btn, .button-resume {
+        min-width: 150px;
+    }
+}
+
+@media screen and (max-width: 1400px) {
+    #project-images {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #altspace {
+        margin-bottom: 10%;
+    }
+
+    form {
+        width: 100%;
+    }
+}

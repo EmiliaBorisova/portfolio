@@ -96,9 +96,7 @@
 // TO DO:
 //  content for About me section
 //  content for resume section
-//  coursework for resume section
 //  project work content
 //  get website hosted and check that contact me works
-//  mobile menu spacing
 
 
