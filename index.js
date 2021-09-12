@@ -10,6 +10,9 @@
                 window.scrollTo(0, 0);
             }
         }
+
+        const form = document.querySelector("form");
+        form.noValidate = true;
         formSubmit();
         contactFormPress();
         setTimeout(function() { 
@@ -24,28 +27,45 @@
             menu.classList.toggle('is-active');
             menuLinks.classList.toggle('active');
         });
+
+        document.querySelectorAll('.navbar-links').forEach(item => {
+            item.addEventListener('click', event => {
+                menu.classList.toggle('is-active');
+                menuLinks.classList.toggle('active');
+            });
+        });
+
+        document.querySelector('.navbar-btn').addEventListener('click', function() {
+            menu.classList.toggle('is-active');
+            menuLinks.classList.toggle('active');
+        });
     }
 
     function formSubmit() {
-        const form = document.querySelector("form");
-        const statusTxt = form.querySelector("#response-message");
+        let form = document.querySelector("form");
+        let statusTxt = form.querySelector("#response-message");
         form.onsubmit = (e) => {
             e.preventDefault();
             statusTxt.style.display = "block";
 
-            let xhr = new XMLHttpRequest()
-            xhr.open("GET", "message.php", true);
+            let xhr = new XMLHttpRequest();
+            xhr.open("POST", "message.php", true);
             xhr.onload = () => {
                 if(xhr.readyState == 4 && xhr.status == 200) {
                     let response = xhr.response;
-                    statusTxt.innerText = response;
-                    form.reset();
-                    setTimeout(() => {
-                        statusTxt.style.display = "none";
-                    }, 3000);
+                    if(response.indexOf("All fields are required!") !=-1 || response.indexOf("Plese enter a valid email address!") != -1 || response.indexOf("Sorry, failed to send your message!") != -1) {
+                        statusTxt.style.color = "red";
+                    } else {
+                        statusTxt.style.color = "green";
+                        form.reset();
+                        setTimeout(() => {
+                            statusTxt.style.display = "none";
+                        }, 3000);
+                    }
+                    statusTxt.innerText = response; 
                 }
             }
-            let formData = new FormData();
+            let formData = new FormData(form);
             xhr.send(formData);
         }
     }
@@ -96,7 +116,6 @@
 // TO DO:
 //  content for About me section
 //  content for resume section
-//  project work content
-//  get website hosted and check that contact me works
+//  content for project work
 
 
