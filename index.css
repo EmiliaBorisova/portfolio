@@ -46,13 +46,16 @@ main {
 #resume, #about, #contact, #projects, #altspace-body {
     padding-left: 20%;
     padding-right: 20%;
-    padding-top: 7%;
-    padding-bottom: 7%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    scroll-margin-top: 25px;
 }
 
-blockquote {
-    color: #565656;
-    font-size: 28px;
+.italic {
+    color: black;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 17px;
+    font-weight: bolder;
 }
 
 header {
@@ -60,7 +63,6 @@ header {
   justify-content: center;
   flex-direction: column;
   display: flex;
-  flex-wrap: wrap;
   align-items: left;
   padding-bottom: 10%;
   margin-left: 35%;
@@ -75,13 +77,13 @@ header {
 
 #typing-text {
     width: 22ch;
-    animation: typing 2s steps(22), blink .5s step-end infinite alternate;
+    animation: typing 2.5s steps(26), blink .5s step-end infinite alternate;
     white-space: nowrap;
     overflow: hidden;
     border-right: 3px solid;
     font-family: 'Nunito Sans', sans-serif;
     font-size: 27px;
-    color:#565656;
+    color: #27363B;
 }
   
   @keyframes typing {
@@ -246,7 +248,7 @@ p {
     font-size: 19px;
     font-weight: lighter;
     /*text-align: justify; */
-    color: #565656;
+    color: black;
     font-family: 'Calibri', sans-serif;
 }
 
@@ -333,6 +335,19 @@ h4 {
     justify-content: space-between;
     flex-direction: row;
     padding-top: 2%;
+}
+
+#contact-wrapper {
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5%;
+    padding: 0%;
+}
+
+#contact-wrapper p {
+    text-align: center;
 }
 
 /* resume */
@@ -425,6 +440,17 @@ h4 {
 
 .title-and-date h4 {
     text-transform: uppercase;
+}
+
+.bullets {
+    font-family: 'Calibri', sans-serif;
+    font-size: 17px;
+    color: black;
+    padding-left: 20px;
+}
+
+.bullets li {
+    margin-top: 7px;
 }
 
  #contact {
@@ -699,6 +725,34 @@ textarea.input {
 
 /* altspace page */
 
+#altspace-body > p {
+    margin-top: 7px;
+    text-indent: 50px;
+}
+
+.altspace-outer-bullets {
+    font-weight: bolder;
+}
+
+.altspace-inner-bullets {
+    padding-left: 20px;
+}
+
+/* map page*/
+
+.map-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.map-img > img {
+    width: 1000px;
+    height: 500px;
+}
+
 /* navbar media */
 
 @media screen and (max-width: 960px) {
@@ -796,22 +850,28 @@ textarea.input {
     #mobile-menu.is-active .bar:nth-child(3) {
         transform: translateY(-8px) rotate(-45deg);
     }
+
+    #resume, #about, #contact, #projects {
+        scroll-margin-top: 70px;
+    }
 }
 
-@media screen and (max-width: 600px) {
-    h1 {
-        font-size: 40px;
+@media screen and (max-width: 1000px) {
+    header {
+        margin-left: 15%;
+        margin-top: -150px;
+        height: 110vh;
     }
 
-    blockquote {
-        font-size: 25px;
+    header h1 {
+        font-size: 6vh;
     }
 }
 
 
 /* about me media */
 
-@media screen and (max-width: 1500px) {
+@media screen and (max-width: 1700px) {
     #about-content > div {
         width: 100%;
     }
@@ -841,11 +901,6 @@ textarea.input {
         align-content: center;
     }
 
-    .button-about {
-        min-width: 60px;
-        min-height: 60px;
-    }
-
     #about-details {
         padding-left: 0;
         display: flex;
@@ -865,6 +920,27 @@ textarea.input {
         justify-content: center;
         text-align: center;
     }
+
+    /*.detail > h4 {
+        margin-top: -30px;
+    }
+
+    #about-details > h3 {
+        margin-bottom: 50px;
+    }
+
+    #about-details {
+        margin-bottom: -50px;
+    }
+
+    #about-pic {
+        margin-bottom: -50px;
+    }n*/
+
+    .button-about {
+        width: 70px;
+        height: 70px;
+    }
 }
 
 @media screen and (max-width: 1700px) {
@@ -878,17 +954,7 @@ textarea.input {
     }
 }
 
-@media screen and (max-width: 1000px) {
-    header {
-        margin-left: 10%;
-    }
-}
-
 @media screen and (max-width: 480px) {
-    header {
-        margin-top: -150px;
-    }
-    
     .loader-wrapper {
         display: none;
     }

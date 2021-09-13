@@ -109,13 +109,3 @@
 })();
 
 
-
-
-
-
-// TO DO:
-//  content for About me section
-//  content for resume section
-//  content for project work
-
-
