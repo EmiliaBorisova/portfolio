@@ -10,7 +10,7 @@
     background-image: url("images/bwcity.jpg");
     background-size: cover;
     background-attachment: fixed;
-    
+
 }
 
 html {
@@ -83,13 +83,13 @@ header {
     font-size: 27px;
     color: #27363B;
 }
-  
+
   @keyframes typing {
     from {
       width: 0
     }
 }
-      
+
   @keyframes blink {
     50% {
       border-color: transparent
@@ -204,7 +204,7 @@ ul {
 .hide {
     display: none;
 }
-  
+
 .loader-wrapper {
     width: 100%;
     height: 100%;
@@ -321,7 +321,7 @@ h4 {
 }
 
 #contact-wrapper {
-    
+
     display: flex;
     justify-content: center;
     align-items: center;
@@ -426,7 +426,7 @@ h4 {
 }
 
 .bullets {
-    
+
     font-size: 17px;
     color: black;
     padding-left: 20px;
@@ -438,7 +438,7 @@ h4 {
 
  #contact {
     background-color: #f3f2f2;
-    
+
 }
 
 .button-resume {
@@ -480,7 +480,7 @@ form {
 .form-container {
     display: flex;
     justify-content: center;
-} 
+}
 
 #form-button-container {
     display: flex;
@@ -574,7 +574,7 @@ textarea.input {
 
 .input-container span:before {
     left: 50%;
-    
+
 }
 
 .input-container span:after {
@@ -747,6 +747,11 @@ textarea.input {
     height: 500px;
 }
 
+#error-warning {
+    display: flex;
+    justify-content: center;
+}
+
 /* navbar media */
 
 @media screen and (max-width: 960px) {
@@ -788,7 +793,7 @@ textarea.input {
         padding-left: 25px;
 
     }
-    
+
     .navbar-toggle .bar {
         width: 25px;
         height: 3px;
@@ -887,7 +892,7 @@ textarea.input {
 
     #about-content {
         display: flex;
-        flex-direction: column;      
+        flex-direction: column;
     }
 
     #about-text {
@@ -957,7 +962,7 @@ textarea.input {
     .content {
         display: flex;
         flex-direction: column;
-        
+
     }
 
     .title-and-date h4 {
@@ -977,10 +982,10 @@ textarea.input {
     .h3-resume {
         padding-top: 40px;
     }
-    
+
     #h3-resume-exception {
         padding-top: 30px;
-    } 
+    }
 
     .resume-btn {
         margin-top: 20px;

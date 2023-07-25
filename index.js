@@ -1,7 +1,8 @@
+/* eslint-disable */
 "use strict";
 (function() {
     window.addEventListener("load", init);
-    
+
     function init() {
         if (history.scrollRestoration) {
             history.scrollRestoration = 'manual';
@@ -15,7 +16,7 @@
         form.noValidate = true;
         formSubmit();
         contactFormPress();
-        setTimeout(function() { 
+        setTimeout(function() {
             let element = document.getElementsByClassName("loader");
             element[0].classList.toggle("hide");
         }, 3000);
@@ -62,7 +63,7 @@
                             statusTxt.style.display = "none";
                         }, 3000);
                     }
-                    statusTxt.innerText = response; 
+                    statusTxt.innerText = response;
                 }
             }
             let formData = new FormData(form);
@@ -94,7 +95,7 @@
             input.addEventListener("blur", blurFunct);
         })
     }
-    
+
     function focusFunc() {
         let parent = this.parentNode;
         parent.classList.add("focus");
